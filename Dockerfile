@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-RUN apk add --no-cache freeradius openssl
+RUN apk add --no-cache freeradius freeradius-eap openssl
 
 ENV PRIVATE_CERT=issued/server.crt PRIVATE_KEY=private/server.key \
     CA_CERT=ca.crt DH_FILE=dh.pem
